@@ -18,4 +18,5 @@ jobs:
         run: pip install flake8
 
       - name: Run Flake8
-        run: flake8 "quiz_controller.py" "quiz_model.py" "quiz_service.py" "test_quiz.py"
+        run: flake8 src/quiz_controller.py src/quiz_model.py src/quiz_service.py src/test_quiz.py
+
