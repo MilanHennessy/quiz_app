@@ -14,7 +14,7 @@ SQLAlchemy==2.0.16  # Updated to a version compatible with Flask-SQLAlchemy
 numpy==1.24.1
 pandas==1.5.3
 scikit-learn==1.2.0
-matplotlib==3.6.3
+matplotlib==3.9.2
 Werkzeug==2.2.2
 
 flask_sqlalchemy==3.1.1  # Ensure compatibility with SQLAlchemy 2.0.16 or higher
