@@ -2,6 +2,7 @@ from src.database import db
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.types import PickleType
 
+
 class QuizModel(db.Model):
     __tablename__ = 'quizzes'
 
