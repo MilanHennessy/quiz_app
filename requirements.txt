@@ -18,3 +18,4 @@ matplotlib==3.6.3
 Werkzeug==2.2.2
 
 flask_sqlalchemy==3.1.1  # Ensure compatibility with SQLAlchemy 2.0.16 or higher
+flake8==3.9.2
