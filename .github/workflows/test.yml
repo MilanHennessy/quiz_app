@@ -15,7 +15,15 @@ jobs:
           python-version: '3.8'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov  # Install pytest-cov for coverage
 
-      - name: Run tests
-        run: pytest
+      - name: Run tests with coverage
+        run: pytest --cov=my_module tests/  # Adjust 'my_module' to the actual module you're testing
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}  # Ensure this secret is set in GitHub Settings > Secrets
