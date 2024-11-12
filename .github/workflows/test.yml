@@ -20,9 +20,6 @@ jobs:
           pip install -r requirements.txt
           pip install pytest pytest-cov  # Install pytest-cov for coverage
 
-      - name: Run tests with coverage
-        run: pytest --cov=my_module tests/  # Adjust 'my_module' to the actual module you're testing
-
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
