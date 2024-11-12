@@ -21,7 +21,7 @@ jobs:
           pip install pytest pytest-cov
 
       - name: Run tests with coverage
-        run: pytest --cov=src.app --cov-report=term-missing tests/test_quiz.py  # Generates coverage.xml in the root directory
+        run: pytest --cov=src.app --cov-report=xml tests/test_quiz.py  # Generates coverage.xml in the root directory
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
